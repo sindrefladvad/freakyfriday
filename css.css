@@ -1,0 +1,306 @@
+.header {
+    overflow: hidden;
+    background-color:black;
+  }
+  
+  /* Style the header links */
+  .header a {
+    float: left;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    color: white;
+  }
+  
+  /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+  .header a.logo {
+    font-size: 30px;
+    font-weight:bold;
+    font-family: Helvetica, Arial, sans-serif;
+    color:white;
+  }
+  
+  /* Change the background color on mouse-over */
+  .header a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Style the active/current link*/
+  .header a.active {
+    color: burlywood;
+  }
+  
+  /* Float the link section to the right */
+  .header-right {
+    float: right;
+  }
+  
+  /* Add media queries for responsiveness - when the screen is 650px wide or less, stack the links on top of each other */
+  @media screen and (max-width: 650px) {
+    .header a {
+      float: left;
+      display: block;
+      text-align: left;
+      font-size: 12px;
+
+
+    }
+   
+
+    .navbar a {
+      padding: 20px 20px;
+    }
+
+    .header a.logo {
+      font-size: 16px;
+    }
+
+  }
+  
+  .navbar {
+      overflow: hidden;
+      background-color:black;
+      opacity:100%;
+      position: fixed; /* Set the navbar to fixed position */
+      top: 0; /* Position the navbar at the top of the page */
+      width: 100%; /* Full width */
+    }
+    
+    /* Links inside the navbar */
+    .navbar a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 30px 30px;
+      text-decoration: none;
+    }
+    
+    /* Change background on mouse-over */
+    .navbar a:hover {
+      background: #ddd;
+      color: black;
+    }
+    
+    /* Main content */
+    .main {
+      margin-top: 110px; /* Add a top margin to avoid content overlay */
+    }
+
+  
+    body {text-align:center;
+      font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  
+  
+  }
+  
+  
+  .header-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgb(0, 0, 0);
+      opacity: 0;
+    }
+
+    .lineup {
+      font-size:40px;
+    }
+
+    h2 {
+      font-size: 40px;
+    }
+
+    h3 {
+      font-size:30px;
+    }
+
+
+
+    .lineup h2:hover, h3:hover {
+      
+        color:#ddd;
+
+    }
+
+    .button {
+      border: none;
+      outline: 0;
+      display: inline-block;
+      padding: 8px;
+      color: white;
+      background-color: #000;
+      text-align: center;
+      cursor: pointer;
+      width: 16%;
+      font-size: 30px;
+      font-weight:bold;
+
+
+    }
+
+    .button:hover {
+      background-color: #ddd;
+    }
+
+    .nyhet {
+      flex: 1 0 32%;
+      height: 400px;
+      margin: 5px;
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+      background-color:white;
+      font-size: 15px;
+  
+    }
+
+   
+
+
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      padding-bottom: 20px;
+    }
+
+    .grid .img {
+        width:100%;
+        flex-wrap: wrap;
+        display: flex;
+    }
+    
+    .cell {
+      flex: 1 0 32%;
+      height: 400px;
+      margin: 5px;
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+      background-color:white;
+    }
+    
+    @media ( max-width: 900px) {
+      .cell {
+        flex-basis: 40%;
+      }
+    }
+    
+    @media ( max-width: 600px) {
+      .cell {
+        flex-basis: 100%;
+      }
+    } 
+
+    input[type=text], select, textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      resize: vertical;
+    }
+    
+    label {
+      padding: 12px 12px 12px 0;
+      display: inline-block;
+    }
+    
+    input[type=submit] {
+      border: none;
+      outline: 0;
+      display: inline-block;
+      padding: 8px;
+      color: white;
+      background-color: #000;
+      text-align: center;
+      cursor: pointer;
+      width: 16%;
+      font-size: 20px;
+      font-weight:bold;
+    }
+    
+    input[type=submit]:hover {
+      background-color: #ddd;
+    }
+    
+    .container {
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+    
+    .col-25 {
+      float: left;
+      width: 25%;
+      margin-top: 6px;
+      font-size: 20px;
+      font-weight:bold;
+    }
+    
+    .col-75 {
+      float: left;
+      width: 75%;
+      margin-top: 6px;
+    }
+    
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    
+    /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+      .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+      }
+    }
+  
+    .footer{
+      font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+      background-color:black;
+      margin: 0;
+      padding: 0;
+    }
+  
+  
+    .footer th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      padding-left: 0px;
+      text-align: left;
+      background-color: white;
+      color:#9c9288;
+    }
+  
+    .footer tr{
+      padding: 20px;
+      color:#9c9288;
+    }
+  
+    .footer td{
+      padding: 12px;
+      color:#9c9288;
+    }
+  
+    .bunnlinja {
+  
+      font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+      border-collapse: collapse;
+      width: auto;
+      margin-left:auto; 
+      margin-right:auto;
+      font-size: 15px;
+      color: #000000;
+  
+    }
+  
+
+  
