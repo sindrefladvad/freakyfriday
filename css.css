@@ -1,6 +1,17 @@
+ 
+ /* COLOR PALETTE 
+  #ED797A (pinkish)
+  #298FC9 (blueboy)
+  #FECC01 (orangeboii)
+
+  navbar inspirasjon fra w3schools : (https://www.w3schools.com/css/css_navbar.asp)
+  kontaktskjema inspirasjon fra w3schools : (https://www.w3schools.com/howto/howto_css_contact_form.asp)
+  */
+
+
 .header {
     overflow: hidden;
-    background-color:black;
+    background-color: #298FC9;
   }
   
   /* Style the header links */
@@ -48,8 +59,7 @@
 
 
     }
-   
-
+  
     .navbar a {
       padding: 20px 20px;
     }
@@ -57,12 +67,11 @@
     .header a.logo {
       font-size: 16px;
     }
-
   }
   
   .navbar {
       overflow: hidden;
-      background-color:black;
+      background-color:  #298FC9;
       opacity:100%;
       position: fixed; /* Set the navbar to fixed position */
       top: 0; /* Position the navbar at the top of the page */
@@ -77,12 +86,13 @@
       text-align: center;
       padding: 30px 30px;
       text-decoration: none;
+
     }
     
     /* Change background on mouse-over */
     .navbar a:hover {
-      background: #ddd;
-      color: black;
+      color:white;
+      background-color:#FECC01;
     }
     
     /* Main content */
@@ -110,6 +120,7 @@
 
     .lineup {
       font-size:40px;
+      background-color:#FECC01;
     }
 
     h2 {
@@ -120,13 +131,6 @@
       font-size:30px;
     }
 
-
-
-    .lineup h2:hover, h3:hover {
-      
-        color:#ddd;
-
-    }
 
     .button {
       border: none;
@@ -145,7 +149,8 @@
     }
 
     .button:hover {
-      background-color: #ddd;
+      background-color:#ED797A;
+      color:black;
     }
 
     .nyhet {
@@ -159,13 +164,11 @@
   
     }
 
-   
-
-
     .grid {
       display: flex;
       flex-wrap: wrap;
       padding-bottom: 20px;
+
     }
 
     .grid .img {
@@ -223,10 +226,11 @@
     }
     
     input[type=submit]:hover {
-      background-color: #ddd;
+      background-color:#ED797A;
+      color:black;
     }
     
-    .container {
+    .containercontact {
       border-radius: 5px;
       background-color: #f2f2f2;
       padding: 20px;
@@ -260,12 +264,70 @@
         margin-top: 0;
       }
     }
+/* 
+Extra style for artist page
+*/
+.container {
+  padding: 20px;
+  background-color:whitesmoke;
+  color: black;
+  font-size: 18px;
+}
+
+.container .img {
+
+    height: auto;
+    width: 100%;
+}
+
+
+.container-alternate {
+  padding: 20px;
+  background-color:white;
+  color:black;
+  font-size: 18px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both
+}
+
+.column-60 {
+  float: left;
+  width: 52%;
+  padding: 20px;
+}
+
+.column-40 {
+  float: left;
+  width: 32%;
+  padding: 20px;
+}
+
+
+@media screen and (max-width: 1000px) {
+  .column-60,
+  .column-40 {
+    width: 100%;
+    text-align: center;
+  }
+  img {
+    margin: auto;
+  }
+}
+
+    /* 
+End style for artist page
+*/
+
   
     .footer{
       font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
       border-collapse: collapse;
       width: 100%;
-      background-color:black;
+      background-color:#ED797A;
       margin: 0;
       padding: 0;
     }
@@ -277,17 +339,17 @@
       padding-left: 0px;
       text-align: left;
       background-color: white;
-      color:#9c9288;
+      color:black;
     }
   
     .footer tr{
       padding: 20px;
-      color:#9c9288;
+      color:black;
     }
   
     .footer td{
       padding: 12px;
-      color:#9c9288;
+      color:black;
     }
   
     .bunnlinja {
