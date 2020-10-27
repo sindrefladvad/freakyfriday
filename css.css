@@ -323,6 +323,24 @@ Extra style for artist page
 End style for artist page
 */
 
+  .about {
+    font-size: 18px;
+  }
+
+  .sponsorgrid {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .sponsor {
+    width:50%
+  }
+
+  @media (max-width: 800px) {
+    .sponsorgrid {
+      flex-direction: column;
+    }
+  }
   
     .footer{
       font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
