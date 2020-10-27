@@ -315,6 +315,7 @@ Extra style for artist page
   }
   img {
     margin: auto;
+    width: 100%;
   }
 }
 
@@ -361,7 +362,7 @@ End style for artist page
       margin-right:auto;
       font-size: 15px;
       color: #000000;
-  
+      background-color:#ED797A;
     }
   
 
